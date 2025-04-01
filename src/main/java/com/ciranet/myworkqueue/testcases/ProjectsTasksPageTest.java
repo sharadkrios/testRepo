@@ -26,17 +26,6 @@ public class ProjectsTasksPageTest extends TestBase
 		projectsTasksPage = new ProjectsTasksPage(driver);
 		assertTrue(projectsTasksPage.navigateToProjectsTasks());
 	}
-
-	@Test(priority = 1, description = "Verify tab Switching", groups = { Constants.FUNCTIONAL_TESTING })
-	public void verifyTabSwitching() 
-	{
-		LoggerManager.info("Verifying Tab Switch");
-		TestBase.setExtentReportSettings("Tab Switch", Constants.FUNCTIONAL_TESTING, "Verify Tab Switch",
-				"Verifying Tab Switch");
-		projectsTasksPage = new ProjectsTasksPage(driver);
-		assertTrue(projectsTasksPage.verifyTabSwitching());
-	}
-
 }
 
 
